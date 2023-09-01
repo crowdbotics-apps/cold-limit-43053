@@ -73,6 +73,7 @@ INSTALLED_APPS = [
 LOCAL_APPS = [
     'home',
     'users.apps.UsersConfig',
+    'nppes',
 ]
 THIRD_PARTY_APPS = [
     'rest_framework',
@@ -91,7 +92,8 @@ THIRD_PARTY_APPS = [
 ]
 MODULES_APPS = get_modules()
 
-INSTALLED_APPS += LOCAL_APPS + THIRD_PARTY_APPS + MODULES_APPS
+# INSTALLED_APPS += LOCAL_APPS + THIRD_PARTY_APPS + MODULES_APPS
+INSTALLED_APPS += LOCAL_APPS + THIRD_PARTY_APPS 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
